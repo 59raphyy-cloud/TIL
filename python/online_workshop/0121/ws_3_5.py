@@ -12,16 +12,17 @@ age = [20, 16, 52, 36, 60]
 address = ['서울', '강릉', '조선', '나주', '한성부']
 
 
-def create_user(name, age, address):
+def create_user(name, age):
     increase_user()
-    user_info = {'name': name, 'age': age, 'address': address}
-    print(f"{user_info['name']}님 환영합니다!")
-    return user_info
+    many_user.append({'이름': name, '나이': age})
+    print(f"{name}님 환영합니다!")
 
 
-many_user = [{'이름': '김시습', '나이': 20},
-{'이름': '허균', '나이': 16},
-{'이름': '남혜인', '나이': 25}]
+many_user = []
+
+for i in range(len(name)):
+    create_user(name[i], age[i])
+
 
 def decrease_book(number):
     global number_of_book
