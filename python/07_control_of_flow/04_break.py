@@ -8,7 +8,7 @@ for i in range(10):
 # break 키워드 예시 (for문)
 # 리스트에서 첫번째 짝수만 찾은 후 반복 종료하기
 numbers = [1, 3, 5, 6, 7, 9, 10, 11]
-found_even = False
+found_even = False  # flag 변수
 
 for num in numbers:
     if num % 2 == 0:
@@ -17,6 +17,16 @@ for num in numbers:
         break
 
 if not found_even:
+    print('짝수를 찾지 못했습니다')
+
+# [EXPAND] flag 변수 대신 for-else문 사용
+numbers_2 = [1, 3, 5, 7, 9, 11]
+
+for num in numbers_2:
+    if num % 2 == 0:
+        print('첫 번째 짝수를 찾았습니다:', num)
+        break
+else:
     print('짝수를 찾지 못했습니다')
 
 
