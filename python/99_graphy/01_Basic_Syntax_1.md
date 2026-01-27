@@ -44,11 +44,17 @@
     - 16진수(0~9,a~f): 0x
 
 ### 시퀀스 타입(Sequence Types)
-- 순서, 나열 (정렬x)
-- 인덱싱
-- 슬라이싱
-- 길이 - 다중 데이터
-- 반복
+1. 순서, 나열 (정렬x)
+2. 인덱싱  # my_sequence[0]
+3. 슬라이싱  # my_sequence[start:stop:step]
+    - [start:stop]
+    - [:stop]
+    - [start:]
+    - [::step]
+    - [::-1] : 역순 정렬
+4. 길이  # len(my_sequence)
+    - 다중 데이터
+5. 반복
 
 **문자열(str)**
 - 여러 줄 문자열: """ 또는 '''

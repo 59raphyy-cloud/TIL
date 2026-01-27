@@ -4,7 +4,7 @@ def addition(x, y):
 
 
 # 람다 표현식 적용 후
-
+lambda x, y: x + y
 
 """
 람다 표현식 활용 (with sorted 함수)

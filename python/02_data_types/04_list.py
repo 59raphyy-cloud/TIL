@@ -33,3 +33,10 @@ print(my_list)  # [1, 'two', 3, 4, 5]
 my_list = [1, 2, 3, 4, 5]
 my_list[2:4] = ['three', 'four']
 print(my_list)  # [1, 2, 'three', 'four', 5]
+
+
+
+# [EXPAND]
+sample_list = ['a', 'b', 'c', 'd']
+sample_list[4] = 'e'
+print(sample_list)  # IndexError: list assignment index out of range
