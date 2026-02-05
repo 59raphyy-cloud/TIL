@@ -48,7 +48,7 @@ for tc in range(1, T + 1):
         number -= 1
         matrix[r][c] = number
     
-    print(f'# {tc}')
+    print(f'#{tc}')
     for row in matrix:
         print(*row)
 
