@@ -2,33 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="242ffb14-c9cb-4f95-bd29-ae8f594dc312" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithm/0207_Stack_1-1/01_stack.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/0207_Stack_1-1/02_brackets_basic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/0207_Stack_1-1/03_brackets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/0207_Stack_1-1/04_delete_repeat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/0207_Stack_1-1/05_password.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/0207_Stack_1-1/06_match_brackets.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm/0207_Stack_1-1/07_pascal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/0203_List_1-2/06_samaung_bus.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/0203_List_1-2/06_samaung_bus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 월말평가 예시/월말평가 안내 가이드.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 월말평가 예시/파이썬트랙_Python_월말평가_예시_문제.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 월말평가 예시/파이썬트랙_Python_월말평가_예시_문제코드/problem01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 월말평가 예시/파이썬트랙_Python_월말평가_예시_문제코드/problem02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 월말평가 예시/파이썬트랙_Python_월말평가_예시_문제코드/problem03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 월말평가 예시/파이썬트랙_Python_월말평가_예시_문제코드/problem04.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 추가풀이/problem01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 추가풀이/problem02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 추가풀이/problem03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 추가풀이/problem04.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 추가풀이/problem05.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 추가풀이/problem06.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 추가풀이/problem07.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 추가풀이/problem08.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 추가풀이/problem09.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차 추가풀이/problem10.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/1회차_서울_1반_오규연.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/[15기 1회차] 월말평가_파이썬 트랙_Python_problem_codes.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/월말평가/1회차_260128/[15기_1회차] 월말평가_파이썬트랙_Python.pdf" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/0213_Queue_1/01_queue.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/0213_Queue_1/02_rotation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/0213_Queue_1/03_pizza.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/0213_Queue_1/04_password_gen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/0213_Queue_1/input_04.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/IM/P11_grading.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/IM/P11_tsar_bomba.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/IM/P13_hiking.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/0203_List_1-2/01_counting.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/0203_List_1-2/01_counting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/IM/P_B_1244_switch_on_off.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/IM/P_B_1244_switch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

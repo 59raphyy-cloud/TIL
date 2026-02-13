@@ -1,3 +1,4 @@
+
 def counting_sort(input_arr, k):
     # 1. 카운트 배열과 정렬 배열 생성
     # 최댓값이 k이므로 칸의 개수는 0을 포함하여 k + 1개
