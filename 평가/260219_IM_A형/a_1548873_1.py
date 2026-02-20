@@ -42,35 +42,71 @@ sys.stdin = open('sample_input_a1.txt')
 
 T = int(input())
 
+# 특정 과목의 학기가 갱신되었을 때, 그 과목을 선수 과목으로 하는 후속 과목들의 학기를 연쇄적으로 갱신
 def check_sub(subject, sub, sem):
+    # subject를 선수 과목으로 가지는 후속 과목 k 확인
     for k in sub[subject]:
+        # 후속 과목의 학기가 선수 과목 학기보다 작거나 같다면 갱신 필요
         if sem[k] <= sem[subject]:
             sem[k] = sem[subject] + 1
+            # 학기 수가 총 과목 수(N)를 초과하면 무한 루프로 간주하여 함수 종료, -1 반환
+            if sem[k] > len(sem) - 1:
+                return -1
+            # 갱신된 학기를 바탕으로 다시 후속 과목들 탐색 (재귀)
             check_sub(k, sub, sem)
         else:
             continue
-    return None
 
 for test_case in range(1, T + 1):
+    # 총 과목 수
     N = int(input())
+    # 선수 과목 데이터 (0번 인덱스: 해당 과목의 선수 과목 개수, 1번 이후: 선수 과목 번호들)
     subjects = [list(map(int, input().split())) for _ in range(N)]
 
+    # 각 과목당 필요한 최소 학기 저장 (1로 초기화)
+    # 과목 번호가 1부터 시작하므로 0번 인덱스는 비워둠
     semester = [1] * (N + 1)
+    # 각 과목 번호를 인덱스로 하여 '그 과목 이후에 들을 과목들(후속 과목)'을 담는 리스트
     sub_seq = [[] for _ in range(N + 1)]
     subject_num = 0
 
-    for info in subjects:
-        if info[0] != 0:
-            pre_req = info[1:]
-            subject_num += 1
+    # for i in range(N):
+    #     subject_num = i + 1
+    #     if subjects[i][0] != 0:
+    #         pre_req = subjects[i][1:]
+    #         semester[subject_num] = max(max(semester[x] for x in pre_req) + 1, semester[subject_num])
+    #
+    #         for j in pre_req:
+    #             sub_seq[j].append(subject_num)
+    #
+    #         if check_sub(subject_num, sub_seq, semester) == -1:
+    #             result = -1
+    #             break
+
+    # 언패킹을 활용해 선수 과목 개수(n)와 리스트(pre_req)를 분리하여 순회
+    for n, *pre_req in subjects:
+        # 1번 과목부터 차례대로 번호 매김
+        subject_num += 1
+
+        # 선수 과목이 존재하는 경우
+        if n != 0:
+            # 1) 현재 과목의 학기 결정: 선수 과목 중 가장 늦게 끝나는 학기 + 1
             semester[subject_num] = max(max(semester[x] for x in pre_req) + 1, semester[subject_num])
 
+            # 2) # 각 선수 과목들의 '후속 과목 목록'에 현재 과목 번호를 추가
             for i in pre_req:
                 sub_seq[i].append(subject_num)
 
-            check_sub(subject_num, sub_seq, semester)
+            # 3) 현재 과목의 학기가 변했으므로, 이 과목을 먼저 수강해야하는 후속 과목들의 학기 갱신 (재귀함수 호출)
+            # 무한 루프로 간주되어 -1을 반환한다면 반복 종료, 결과 변수에 -1 할당
+            if check_sub(subject_num, sub_seq, semester) == -1:
+                result = -1
+                break
+    else:
+        # 모든 루프가 정상 종료되면 가장 큰 학기 값을 결과 변수에 할당
+        result = max(semester)
 
-    print(f'#{test_case} {max(semester)}')
+    print(f'#{test_case} {result}')
 
 
 
