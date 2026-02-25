@@ -6,13 +6,12 @@ API_URL = 'https://jsonplaceholder.typicode.com/users/'
 
 dummy_data = []
 
-for n in range(1, 10):
-    # API 요청
-    response = requests.get(API_URL + str(n))
-    # JSON -> dict 데이터 변환
-    parsed_data = response.json()
-    # name을 리스트에 추가
-    dummy_data.append(parsed_data['name'])
+for n in range(1, 11):
+    response = requests.get(API_URL + str(n))  # API 요청
+    parsed_data = response.json()  # JSON -> dict 데이터 변환
+    
+    name = parsed_data['name']
+    dummy_data.append(name)  # 사용자 정보(name)를 리스트에 추가
 
 print(dummy_data)
 
