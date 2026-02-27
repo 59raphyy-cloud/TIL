@@ -14,7 +14,7 @@ for test_case in range(1, T + 1):
 
     # 첫 번째 판이 나오기 전(M초 전)에 도착하는 손님이 있는지 확인
     # 0번 손님이 M초 이후에 도착한다면, 모든 손님이 M초 이후에 도착
-   if customer[0] < M:
+    if customer[0] < M:
         result = 'Impossible'
 
     # 모든 손님에게 팔기 위해 구워야 하는 판 수
