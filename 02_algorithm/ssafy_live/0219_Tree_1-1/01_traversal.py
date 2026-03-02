@@ -1,6 +1,6 @@
 import sys
 
-sys.stdin = open('01_input.txt')
+sys.stdin = open('input_01.txt')
 
 # 1. 전위 순회
 def preorder(node):
