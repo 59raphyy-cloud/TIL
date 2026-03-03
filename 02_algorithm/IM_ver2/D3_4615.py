@@ -29,7 +29,7 @@ for test_case in range(1, T + 1):
         else:             # 현재 플레이어가 백돌(2)인 경우
             opponent = 1  # 상대방은 흑돌(1)로 설정
         """
-        opponent = 3 - player
+        # opponent = 3 - player
 
         # 해당 좌표에 돌 놓음
         board[r][c] = player

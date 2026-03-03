@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a73064a-fd52-46e1-bd9f-06cc29569421" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../A/11315_gomoku.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../A/4875_maze.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../A/5105_maze_distance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../A/input_11315.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../A/input_4875.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../A/input_5105.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0219_Tree_1-1/03_inorder_traversal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0219_Tree_1-1/04_arithmetic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0219_Tree_1-1/input_03.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/0219_Tree_1-1/input_04.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../A/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IM_ver2/D3_4615.py" beforeDir="false" afterPath="$PROJECT_DIR$/../IM_ver2/D3_4615.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0219_Tree_1-1/01_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0219_Tree_1-1/input_01.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0219_Tree_1-1/01_traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/0219_Tree_1-1/01_traversal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0219_Tree_1-1/02_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0219_Tree_1-1/input_02.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0219_Tree_1-1/02_subtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/0219_Tree_1-1/02_subtree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="3APyA3wxtV3SZCeoQ3TqxVSvAg2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a73064a-fd52-46e1-bd9f-06cc29569421" name="Default Changelist" comment="" />
+      <created>1772508354408</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772508354408</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
