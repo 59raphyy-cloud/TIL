@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a73064a-fd52-46e1-bd9f-06cc29569421" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../A/11315_gomoku.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../A/4875_maze.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../A/5105_maze_distance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../A/input_11315.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../A/input_4875.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../A/input_5105.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0219_Tree_1-1/03_inorder_traversal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0219_Tree_1-1/04_arithmetic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0219_Tree_1-1/input_03.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/0219_Tree_1-1/input_04.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A/output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../IM_ver2/D3_4615.py" beforeDir="false" afterPath="$PROJECT_DIR$/../IM_ver2/D3_4615.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0219_Tree_1-1/01_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0219_Tree_1-1/input_01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0219_Tree_1-1/01_traversal.py" beforeDir="false" afterPath="$PROJECT_DIR$/0219_Tree_1-1/01_traversal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0219_Tree_1-1/02_input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/0219_Tree_1-1/input_02.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0219_Tree_1-1/02_subtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/0219_Tree_1-1/02_subtree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0303_DFS/07_work_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/0303_DFS/07_work_order.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +22,34 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="07_work_order" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ssafy_live" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/0303_DFS" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0303_DFS/07_work_order.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.07_work_order" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,5 +72,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
