@@ -8,6 +8,7 @@ sys.stdin = open('input_')
 3) 변수명 피드백해줘.
 4) 코드 개선할 부분이 있다면 힌트만 줘.
 """
+
 # ==================================================
 
 T = int(input())
@@ -18,7 +19,6 @@ for test_case in range(1, T + 1):
     arr = list(map(int, input().split()))
     matrix = [list(map(int, input().split())) for _ in range(N)]
 
-    result = []
+    
 
-    print(f'#{test_case} {result}')
-    print(f'#{test_case}', *result)
+    # print(f'#{test_case} {}')
