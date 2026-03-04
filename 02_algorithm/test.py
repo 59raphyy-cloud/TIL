@@ -1,5 +1,20 @@
 
+
+
+# ===========================
+
 """
+from collections import deque
+
+arr = deque([0, 1, 2, 3, 4])
+b = [None] * 5
+# [TIL] 연산자 오른쪽에서 먼저 pop 실행 후 왼쪽 pop 실행
+b[arr.popleft()] = arr.popleft()  # b(1) = 0
+print(arr)  # deque([2, 3, 4])
+print(b)    # [None, 0, None, None, None]
+
+# ===========================
+
 arr = [[]] * 5  # 얕은 복사, 객체 참조
 # >> 빈 리스트 5개를 만든 것이 아니라, 하나의 빈 리스트를 5개의 변수가 동시에 가리키게 만든 것
 arr[0].append(1)
