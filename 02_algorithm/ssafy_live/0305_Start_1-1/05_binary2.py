@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('input_')
+sys.stdin = open('input_05.txt')
 
 # ==================================================
 # ver1_26
@@ -13,12 +13,15 @@ sys.stdin = open('input_')
 T = int(input())
 
 for test_case in range(1, T + 1):
-    N = int(input())
-    N, M = map(int, input().split())
-    arr = list(map(int, input().split()))
-    matrix = [list(map(int, input().split())) for _ in range(N)]
+    fraction = float(input())
+    binary = ""
 
-    result = []
+    while fraction > 0:
+        fraction *= 2
+        bit = int(fraction)
+        binary += str(bit)
+        fraction -= bit
+
+    result = binary if len(binary) <= 12 else 'overflow'
 
     print(f'#{test_case} {result}')
-    print(f'#{test_case}', *result)

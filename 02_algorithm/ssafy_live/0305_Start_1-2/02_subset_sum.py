@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('input_')
+sys.stdin = open('input_02.txt')
 
 # ==================================================
 # ver1_26
@@ -10,15 +10,17 @@ sys.stdin = open('input_')
 4) 코드 개선할 부분이 있다면 힌트만 줘.
 """
 
+from itertools import combinations
+
 T = int(input())
 
 for test_case in range(1, T + 1):
-    N = int(input())
-    N, M = map(int, input().split())
-    arr = list(map(int, input().split()))
-    matrix = [list(map(int, input().split())) for _ in range(N)]
+    N, K = map(int, input().split())
 
-    result = []
+    cnt = 0
 
-    print(f'#{test_case} {result}')
-    print(f'#{test_case}', *result)
+    for subset in combinations(range(1, 13), N):
+        if sum(subset) == K:
+            cnt += 1
+
+    print(f'#{test_case} {cnt}')
