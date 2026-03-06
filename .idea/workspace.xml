@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="242ffb14-c9cb-4f95-bd29-ae8f594dc312" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02_algorithm/ssafy_live/0305_Start_1-1/input_02.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_algorithm/ssafy_live/0305_Start_1-1/input_03.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_algorithm/ssafy_live/0305_Start_1-2/02_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02_algorithm/ssafy_live/0305_Start_1-2/input_01.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_algorithm/_.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_algorithm/_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_algorithm/ssafy_live/0303_DFS/07_work_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/02_algorithm/ssafy_live/0303_DFS/07_work_order.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
