@@ -1,8 +1,19 @@
 
+# -----------------------
 
+import heapq
+data = [3, 5, 2, 8]
+print(heapq.nlargest(2, data))       # [8, 5]
+print(sum(heapq.nlargest(2, data)))  # 13
+"""
+# -----------------------
+
+board = [[1, 2], [3, 4]]
+print(sum(board))  # TypeError: unsupported operand type(s) for +: 'int' and 'list'
+print(sum(sum(x) for x in board))  # 10
 
 # -----------------------
-"""
+
 from collections import deque
 
 arr = deque([0, 1, 2, 3, 4])
