@@ -333,7 +333,7 @@ for test_case in range(1, T + 1):
                 islands[num] = find_island(r, c)
                 num += 1
 
-    bridges = [[0] for _ in range(num)]
+    bridges = [[0] * num for _ in range(num)]
 
     for i in range(num):
         for j in range(i + 1, num):
@@ -349,19 +349,15 @@ for test_case in range(1, T + 1):
                     continue
                 bridge_len = x2 - x1 - 1
                 bridges[i][j] = bridges[j][i] = bridge_len
-                # bridges[i].append([j, bridge_len])
-                # bridges[j].append([i, bridge_len])
             elif ic & jc:
                 y1, y2 = max(ir), min(jr)
                 connected = False
                 for c in ic & jc:
                     if not True in [visited[r][c] for r in range(y1 + 1, y2)]:
                         connected = True
-                if connected:
+                if not connected:
                     continue
                 bridge_len = y2 - y1 - 1
-                # bridges[i].append([j, bridge_len])
-                # bridges[j].append([i, bridge_len])
                 bridges[i][j] = bridges[j][i] = bridge_len
 
 
