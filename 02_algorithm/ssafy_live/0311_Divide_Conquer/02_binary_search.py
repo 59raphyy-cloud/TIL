@@ -1,8 +1,14 @@
 import sys
+sys.stdin = open('input_02.txt')
 
-sys.stdin = open('02_sample_input.txt')
+# ==================================================
+# ver1_260311
+# 분할정복 기본문제
+# SWEA-4839 이진탐색
+
 
 T = int(input())
+
 
 for tc in range (1, T + 1):
     P, A, B = map(int, input().split())
