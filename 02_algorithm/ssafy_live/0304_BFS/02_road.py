@@ -1,14 +1,18 @@
 import sys
 sys.stdin = open('input_02.txt')
 
-# ver1_260304
-# [실습] BFS 연습문제
+# [실습] BFS/DFS 연습문제 - 도로 이동시간
 # ==================================================
+# ver1_260304
+# BFS
+
 
 from collections import deque
 
+
 dr = [-1, 1, 0, 0]
 dc = [0, 0, -1, 1]
+
 
 def bfs():
     visited = [[False] * M for _ in range(N)]
@@ -32,6 +36,7 @@ def bfs():
                 if road[nr][nc] == '1' and not visited[nr][nc]:
                     q.append((nr, nc, cnt + 1))
                     visited[nr][nc] = True  # push 시점에 방문 처리
+
 
 N, M = map(int, input().split())  # 도로 크기 N(행), M(열)
 road = [input() for _ in range(N)]

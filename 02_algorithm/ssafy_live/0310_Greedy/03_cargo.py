@@ -1,18 +1,14 @@
 import sys
 sys.stdin = open('input_03.txt')
 
+# [실습] 탐욕 알고리즘 기본문제
+# SWEA-5202 화물 도크 [D3]
 # ==================================================
 # ver1_260310
-# # 탐욕 알고리즘 기본문제
-# # SWEA-5202
-"""
-내가 작성한 코드 수정하지 말고
-1) 주석 달고  2) 한줄요약, 세줄요약 해줘.
-3) 변수명 피드백해줘.
-4) 코드 개선할 부분이 있다면 힌트만 줘.
-"""
+
 
 T = int(input())
+
 
 for test_case in range(1, T + 1):
     N = int(input())
@@ -34,4 +30,3 @@ for test_case in range(1, T + 1):
             truck_cnt += 1
 
     print(f'#{test_case} {truck_cnt}')
-

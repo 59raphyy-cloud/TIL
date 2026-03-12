@@ -1,11 +1,13 @@
 import sys
 sys.stdin = open('input_01.txt')
 
+# [실습] BFS 연습문제 - BFS
 # ==================================================
 # ver1_260304
-# [실습] BFS 연습문제
+
 
 from collections import deque
+
 
 def bfs(node):
     visited = [False] * (V + 1)
@@ -22,6 +24,7 @@ def bfs(node):
             if not visited[nxt]:
                 q.append(nxt)
     return path
+
 
 V, E = map(int, input().split())
 graph = list(map(int, input().split()))

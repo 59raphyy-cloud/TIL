@@ -1,14 +1,18 @@
 import sys
 sys.stdin = open('input_07.txt')
 
+# [실습] DFS 추가문제
+# SWEA-1267 작업순서 [D6]
 # ==================================================
 # ver2.5_260305
-# BFS(큐)
+# 위상정렬, BFS(큐)
 
 
 from collections import deque
 
+
 T = 10
+
 
 def bfs():
     order = []  # 작업 순서를 저장할 리스트
@@ -30,6 +34,7 @@ def bfs():
 
     return order  # 작업 순서 리스트 반환
 
+
 for test_case in range(1, T + 1):
     V, E = map(int, input().split())
     edges = iter(map(int, input().split()))
@@ -47,10 +52,11 @@ for test_case in range(1, T + 1):
 """
 # ==================================================
 # ver2.4_260305
-# DFS(스택)
+# 위상정렬, DFS(스택)
 
 
 T = 10
+
 
 def dfs():
     order = []  # 작업 순서를 저장할 리스트
@@ -72,6 +78,7 @@ def dfs():
 
     return order  # 작업 순서 리스트 반환
 
+
 for test_case in range(1, T + 1):
     V, E = map(int, input().split())
     edges = iter(map(int, input().split()))
@@ -89,10 +96,11 @@ for test_case in range(1, T + 1):
 
 # ==================================================
 # ver2.3_260305
-# DFS(재귀)
+# 위상정렬, DFS(재귀)
 
 
 T = 10
+
 
 # 재귀적으로 후속 작업들의 진입 차수를 줄이며 탐색하는 함수
 def dfs(node):
@@ -136,6 +144,7 @@ for test_case in range(1, T + 1):
 
 T = 10
 
+
 for test_case in range(1, T + 1):
     V, E = map(int, input().split())
     edges = iter(map(int, input().split()))
@@ -173,6 +182,7 @@ for test_case in range(1, T + 1):
 
 T = 10
 
+
 for test_case in range(1, T + 1):
     V, E = map(int, input().split())
     edges = iter(map(int, input().split()))
@@ -208,12 +218,11 @@ for test_case in range(1, T + 1):
 
 # ==================================================
 # ver1_260304
-# DFS 추가문제
-# 계층화(Layering)
-# 재귀적 순서 갱신
+# 계층화(Layering), 재귀적 순서 갱신
 
 
 T = 10
+
 
 def update_order(work, sub, order):
     # work를 선행 작업으로 가지는 후속 작업 k 확인

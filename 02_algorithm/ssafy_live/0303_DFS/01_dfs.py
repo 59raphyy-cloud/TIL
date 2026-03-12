@@ -1,9 +1,10 @@
 import sys
 sys.stdin = open('input_01.txt')
 
+# [실습] DFS 연습문제 - DFS
 # ==================================================
 # ver1_260303
-# [실습] DFS 연습문제
+
 
 def dfs(node):
     visited = [False] * (V + 1)
@@ -37,4 +38,3 @@ for adj in adj_lst:
     adj.sort(reverse=True)
 
 print(''.join(dfs(1)))
-

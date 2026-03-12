@@ -1,9 +1,9 @@
 import sys
 sys.stdin = open('input_01.txt')
 
+# [실습] 분할정복 연습문제
 # ==================================================
 # ver1_260311
-# 분할정복 연습문제
 # 로무토 분할
 
 
@@ -29,9 +29,7 @@ def partition(arr, s, e):
         # 현재 요소가 피벗보다 크다면 continue
         # - 피벗보다 작은 값들의 개수가 변하지 않았으므로 경계 인덱스가 이동하지 않음
 
-    return i  # 확정된 피벗의 위치 인덱스 반환
-
-'''
+    '''
     # [OPTIMIZE] 피벗을 제외한 나머지 요소들을 정리한 뒤, 마지막에 피벗(arr[e])을 i + 1 값과 swap
     # 시작부터 피벗 바로 전(e - 1)까지 순회하며 피벗과 비교
     for j in range(s, e):
@@ -41,12 +39,14 @@ def partition(arr, s, e):
             # i와 j의 위치가 다르다면 swap
             if i < j:
                 arr[i], arr[j] = arr[j], arr[i]
-    
+
     # 마지막에 피벗을 경계 다음 위치(i + 1)로 이동
     arr[i + 1], arr[e] = arr[e], arr[i + 1]
-    
+
     return i + 1
-'''
+    '''
+
+    return i  # 확정된 피벗의 위치 인덱스 반환
 
 
 def quick_sort(arr, s, e):

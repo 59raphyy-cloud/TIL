@@ -1,14 +1,15 @@
 import sys
 sys.stdin = open('input_06.txt')
 
+# [실습] 완전탐색&순열조합 기본문제
+# SWEA-4881 배열 최소 합 [D2]
 # ==================================================
 # ver1_260309
-# 완전탐색&순열조합 기본문제
-# SWEA-4881 배열 최소 합 (D2)
-# DFS(백트래킹) 방식
+# DFS(백트래킹)
 
 
 T = int(input())
+
 
 def get_sum(r, cur_sum, picked):
     global min_val
@@ -28,6 +29,7 @@ def get_sum(r, cur_sum, picked):
                     get_sum(r + 1, new_sum, picked + [c])
 
     return min_val
+
 
 for test_case in range(1, T + 1):
     N = int(input())

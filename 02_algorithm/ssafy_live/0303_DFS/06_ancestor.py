@@ -1,17 +1,17 @@
 import sys
 sys.stdin = open('input_06.txt')
 
-# ver1_260304
-"""
-내가 작성한 코드 수정하지 말고
-1) 주석 달고  2) 한줄요약, 세줄요약 해줘.
-3) 변수명 피드백해줘.
-4) 코드 개선할 부분이 있다면 힌트만 줘.
-"""
-
+# [실습] DFS 추가문제
+# SWEA-1248 공통조상 [D5]
 # ==================================================
+# ver1_260304
+
 
 from collections import deque
+
+
+T = int(input())
+
 
 def dfs(node):
     stack = [node]
@@ -29,7 +29,6 @@ def dfs(node):
 
     return node, cnt
 
-T = int(input())
 
 for test_case in range(1, T + 1):
     V, E, n1, n2 = map(int, input().split())

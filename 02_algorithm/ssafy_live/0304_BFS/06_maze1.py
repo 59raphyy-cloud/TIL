@@ -1,10 +1,12 @@
 import sys
 sys.stdin = open('input_06.txt')
 
+# [실습] BFS/DFS 추가문제
+# SWEA-1226 [D4]
 # ==================================================
 # ver1.3_260304
-# BFS/DFS 추가문제
-# BFS 풀이
+# BFS
+
 
 from collections import deque
 
@@ -37,12 +39,10 @@ for _ in range(T):
 
     print(f'#{tc} {bfs()}')
 
-
 """
 # ==================================================
 # ver1.2_260304
-# BFS/DFS 추가문제
-# DFS(재귀) 풀이
+# DFS(재귀)
 
 # ---------------------
 # [TIL] 파이썬의 기본 재귀 제한(sys.getrecursionlimit()): 1000
@@ -79,8 +79,7 @@ for _ in range(T):
     
 # ==================================================
 # ver1.1_260304
-# BFS/DFS 추가문제
-# DFS(스택) 풀이
+# DFS(스택)
 
 T = 10
 

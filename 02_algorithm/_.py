@@ -1,6 +1,8 @@
 import sys
-sys.stdin = open('input_')
+sys.stdin = open('input_0')
 
+# [실습]
+# SWEA- [D]
 # ==================================================
 # ver1_26
 """
@@ -11,6 +13,7 @@ sys.stdin = open('input_')
 """
 
 T = int(input())
+
 
 for test_case in range(1, T + 1):
     N = int(input())

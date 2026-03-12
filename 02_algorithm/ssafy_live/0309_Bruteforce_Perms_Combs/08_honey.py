@@ -1,46 +1,49 @@
 import sys
 sys.stdin = open('input_08.txt')
 
+# [실습] 완전탐색&순열조합 기본문제
+# SWEA-2115 벌꿀채취 [모의]
 # ==================================================
 # ver1_260309
-# # 완전탐색&순열조합 기본문제
-# # SWEA-2115 배열 최소 합 (D2)
-# # DFS 방식
-"""
-내가 작성한 코드 수정하지 말고
-1) 주석 달고  2) 한줄요약, 세줄요약 해줘.
-3) 변수명 피드백해줘.
-4) 코드 개선할 부분이 있다면 힌트만 줘.
-"""
+# DFS
 
-import heapq
+
 from itertools import combinations
+import heapq
+
 
 T = int(input())
+
 
 # 특정 시작점(r, c)에서 M개 벌통 중 합이 C 이하인 최대 제곱 합을 구하는 함수
 def cal_profit(r, c):
     profit = 0
+
     # 1개부터 M개까지 모든 조합을 확인 (완전 탐색)
     for i in range(1, M + 1):
         for combs in combinations(hives[r][c:c + M], i):
             if sum(combs) > C:
                 continue
             profit = (max(profit, sum(x ** 2 for x in combs)))
+
+    '''
+        # [WRONG] 큰 숫자부터 정렬 (역순 정렬)
+        # >> 큰 숫자를 먼저 선택하는 것이 항상 최대 제곱 합을 보장하지 않음
+        selected = sorted(hives[r][c:c + M], reverse=True)
+        temp_honey = selected[0]
+        temp_profit = temp_honey ** 2
+
+        for honey in selected[1::]:
+            temp_honey += honey
+            if temp_honey > C:
+                break
+            temp_profit += honey ** 2
+
+        return temp_profit
+        '''
+
     return profit
-    """
-    [WRONG] 큰 숫자부터 정렬 (역순 정렬)
-    # >> 큰 숫자를 먼저 선택하는 것이 항상 최대 제곱 합을 보장하지 않dma
-    selected = sorted(hives[r][c:c + M], reverse=True)
-    temp_honey = selected[0]
-    temp_profit = temp_honey ** 2
-    for honey in selected[1::]:
-        temp_honey += honey
-        if temp_honey > C:
-            break
-        temp_profit += honey ** 2
-    return temp_profit
-    """
+
 
 # 1. 일꾼 두 명이 서로 다른 행을 선택할 때의 최댓값을 구하는 함수
 def get_from_other_rows():
@@ -55,6 +58,7 @@ def get_from_other_rows():
 
     # 행별 최댓값 중 상위 2개를 합산하여 반환
     return sum(heapq.nlargest(2, max_in_rows))
+
 
 # 2. 일꾼 두 명이 같은 행 내에서 겹치지 않게 두 구간을 선택할 때의 최댓값을 구하여 전체 최댓값 갱신
 def get_from_same_row():
@@ -71,6 +75,7 @@ def get_from_same_row():
                 max_profit = max(max_profit, profit_1 + profit_2)
 
     return max_profit
+
 
 for test_case in range(1, T + 1):
     N, M, C = map(int, input().split())

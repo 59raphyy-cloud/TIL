@@ -1,13 +1,15 @@
 import sys
 sys.stdin = open('input_02.txt')
 
+# [실습] 탐욕 알고리즘 기본문제
+# SWEA-5201 컨테이너 운반 [D3]
 # ==================================================
 # ver1.2_260310
-# 탐욕 알고리즘 기본문제
-# SWEA-5201 컨테이너 운반
-# idx 사용
+# idx 포인터
+
 
 T = int(input())
+
 
 for test_case in range(1, T + 1):
     N, M = map(int, input().split())
@@ -41,11 +43,14 @@ for test_case in range(1, T + 1):
 """
 # ==================================================
 # ver1.1_260310
-# deque 사용
+# deque
+
 
 from collections import deque
 
+
 T = int(input())
+
 
 for test_case in range(1, T + 1):
     N, M = map(int, input().split())
@@ -67,7 +72,6 @@ for test_case in range(1, T + 1):
                 break
             # 현재 트럭의 적재 용량보다 무거운 화물이라면 이후의 트럭에도 적재 불가하므로
             # 해당 화물을 버리고(popleft) 다음 화물(더 가벼운 것)을 검사함
-            
         
         # 모든 화물을 검토했거나 실었다면 종료
         if len(weights) == 0:

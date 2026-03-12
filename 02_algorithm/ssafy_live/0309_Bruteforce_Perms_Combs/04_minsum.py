@@ -1,14 +1,15 @@
 import sys
 sys.stdin = open('input_04.txt')
 
+# [실습] 완전탐색&순열조합 기본문제
+# SWEA-5188 최소합 [D3]
 # ==================================================
 # ver1_260309
-# 완전탐색&순열조합 기본문제
-# SWEA-5188 최소합 (D3)
-# DFS 방식
+# DFS
 
 
 T = int(input())
+
 
 def get_sum(r, c, cur_sum):
     global min_val
@@ -35,6 +36,7 @@ def get_sum(r, c, cur_sum):
             get_sum(nr, c, new_sum)
 
     return min_val
+
 
 for test_case in range(1, T + 1):
     N = int(input())

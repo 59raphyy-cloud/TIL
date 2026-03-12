@@ -1,13 +1,18 @@
 import sys
 sys.stdin = open('input_04.txt')
 
+# [실습] BFS/DFS 기본문제
+# SWEA-5102 노드의 거리 [D2]
 # ==================================================
 # ver1_260304
-# [실습] BFS 기본문제
+# BFS
+
 
 from collections import deque
 
+
 T = int(input())
+
 
 def bfs():
     visited = [False] * (V + 1)
@@ -28,6 +33,7 @@ def bfs():
                 visited[n] = True
 
     return 0  # 도달할 수 없는 경우 0 반환
+
 
 for test_case in range(1, T + 1):
     V, E = map(int, input().split())
