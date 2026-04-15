@@ -1,0 +1,22 @@
+{% extends "articles/base.html" %}
+{% block ssafy %}
+
+    <h1>저녁 메뉴 추천</h1>
+
+    <h2>추천 메뉴는 {{ picked_food }}입니다.</h2>
+    <h2>추천 메뉴 {{ picked_food }}의 글자 수는 {{ picked_food|length }}글자 입니다.</h2>
+
+    <h2>메뉴판</h2>
+    <ul>
+        {% for food in foods %}
+            <li>{{ food }}</li>
+        {% endfor %}
+    </ul>
+
+    {% if foods|length == 0 %}
+        <p>메뉴가 소진되었습니다.</p>
+    {% else %}
+        <p>아직 메뉴가 남아있습니다.</p>
+    {% endif %}
+
+{% endblock ssafy %}

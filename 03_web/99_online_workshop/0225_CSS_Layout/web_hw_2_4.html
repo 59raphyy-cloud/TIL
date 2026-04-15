@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div p {
+      color: blue;
+      font-size: 30px;
+    }  /* 자손 결합자: 부모(div) 안의 모든 p를 파란색으로 */
+    div > p {
+      color: crimson;
+    }  /* 자식: 부모(div) 바로 아래 직계 p만 크림슨색으로 */
+    .grandchild-area {
+      padding-left: 60px
+    }
+    /* ========================================================
+    [자손 결합자와 자식 결합자의 차이]
+      자손 결합자(공백)는 부모 안에 중첩된 모든 하위 요소를 선택하지만,
+      자식 결합자(>)는 부모 바로 아래에 위치한 직계 자식만을 선택한다.
+      즉, 자손 결합자는 손자나 증손자까지 모두 포함하는 반면,
+      자식 결합자는 한 단계 아래의 요소로 선택 범위를 제한한다.
+    ======================================================== */
+  </style>
+</head>
+<body>
+  <div>
+    <p>자식</p> <section class="grandchild-area">
+      <p>손자</p> </section>
+    <p>자식</p>
+  </div>
+</body>
+</html>

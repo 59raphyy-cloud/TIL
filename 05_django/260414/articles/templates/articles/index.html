@@ -1,0 +1,11 @@
+{% extends "articles/base.html" %}
+{% comment %} 어떤 부모를 상속받는지 선언 {% endcomment %}
+{% comment %} {% extends "articles/base.html" %} must be the first tag in 'articles/index.html'. {% endcomment %}
+{% comment %} 가장 첫 줄에 정의되어야 함. 주석도 예외 없음 {% endcomment %}
+
+{% block ssafy %}
+    <h1>메인 페이지</h1>
+
+    <a href="/articles/dinner/">Dinner 페이지로!</a>
+    <a href="{% url "articles:dinner" %}">Dinner 페이지로!</a>
+{% endblock ssafy %}

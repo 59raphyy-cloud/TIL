@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fake Naver</h1>
+    {% comment %} action: 목적지 주소 {% endcomment %}
+    <form action="https://search.naver.com/search.naver" method="GET">
+        {% comment %} 검색 버튼을 아래로 내리고 싶으면 텍스트 인풋을 div로 감싸면 됨 {% endcomment %}
+        <input type="text" name="query">
+        <input type="submit" value="검색">
+    </form>
+</body>
+</html>
