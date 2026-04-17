@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>EDIT</h1>
+  <form action="{% url "articles:update" article.pk %}" method="POST">
+    {% csrf_token %}
+    <input type="text" name="title" value="{{ article.title }}">
+    <textarea name="content">{{ article.content }}</textarea>
+    <input type="submit" value="수정">
+  </form>
+  <hr>
+  <a href="{% url "articles:detail" article.pk %}">상세 페이지</a>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container py-3">
+    <h1>영화 상세 정보</h1>
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">{{ movie.title }}</h2>
+        <h6 class="card-subtitle mb-2 text-muted">감독: {{ movie.director }}</h6>
+        <p class="card-text">{{ movie.description }}</p>
+      </div>
+    </div>
+
+    <div class="mt-3 d-flex gap-2">
+      <a href="{% url 'movies:index' %}" class="btn btn-secondary">목록</a>
+      <a href="{% url 'movies:update' movie.pk %}" class="btn btn-success">수정</a>
+
+      <form action="{% url 'movies:delete' movie.pk %}" method="POST" class="d-inline">
+        {% csrf_token %}
+        <input type="submit" value="삭제" class="btn btn-danger" onclick="return confirm('정말 삭제하시겠습니까?')">
+      </form>
+    </div>
+
+    <hr>
+    <h4>감독 상세 정보</h4>
+
+    <div class="director-profile-section my-5">
+      <div class="row align-items-start my-5">
+        <div class="col-md-3">
+          <div class="card border-0">
+            <img src="{{ movie.director_img_url }}" 
+                class="img-fluid rounded" 
+                alt="{{ movie.director }}"
+                style="max-width: 250px; height: auto;">
+          </div>
+        </div>
+        
+        <div class="col-md-8 ps-md-5">
+          <h2 class="mb-3" style="font-weight: 500; color: #333;">{{ movie.director }}</h2>
+          
+          <div class="mb-4">
+            <p class="mb-1 fw-bold">대표작:</p>
+            {% for work in movie.director_works %}
+              <span class="text-secondary">{{ work }}{% if not forloop.last %}, {% endif %}</span>
+            {% empty %}
+              <span class="text-muted">등록된 대표작이 없습니다.</span>
+            {% endfor %}
+          </div>
+          
+          <div class="director-info-text text-muted" style="line-height: 1.8;">
+            {{ movie.director_info|linebreaks|default:"정보를 불러오지 못했습니다." }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="alert alert-secondary mt-5 py-2" role="alert" style="background-color: #f8f9fa; border: none;">
+      <small class="text-muted" style="font-size: 0.8rem;">※ 감독 대표작과 감독 정보는 AI가 생성한 답변으로, 정확하지 않을 수 있습니다.</small>
+    </div>
+  </div>
+{% endblock content %}
