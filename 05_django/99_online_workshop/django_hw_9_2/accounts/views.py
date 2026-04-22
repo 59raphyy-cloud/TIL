@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login as auth_login
-from django.contrib.auth import logout as auth_logout
 from django.contrib.auth import get_user_model
 from django.contrib.auth.forms import AuthenticationForm
+from .forms import CustomUserCreationForm
 
 # Create your views here.
 def index(request):
@@ -29,7 +29,16 @@ def login(request):
     return render(request, 'accounts/login.html', context)
 
 
-# 로그아웃 기능
-def logout(request):
-    auth_logout(request)
-    return redirect('accounts:index')
+# 회원가입 기능
+def signup(request):
+    if request.method == 'POST':
+        form = CustomUserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('accounts:index')
+    else:
+        form = CustomUserCreationForm()
+    context = {
+        'form': form,
+    }
+    return render(request, 'accounts/signup.html', context)

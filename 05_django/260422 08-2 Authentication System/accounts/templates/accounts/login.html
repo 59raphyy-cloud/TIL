@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <form action="{% url "accounts:login" %}" method="POST">
+    {% csrf_token %}
+    {% comment %} username과 password를 받을 input을 직접 작성해야 하는가? {% endcomment %}
+    {{ form }}
+    <input type="submit" value="로그인">
+  </form>
+</body>
+</html>
