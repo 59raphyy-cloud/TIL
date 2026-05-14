@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}베스트 셀러 목록{% endblock %}
+
+{% block style %}
+  .rank-1 { background-color: #fad8de; } /* 1위 분홍색 */
+  .rank-2 { background-color: #d8e1fc; } /* 2위 파란색 */
+  .rank-3 { background-color: #dcf8de; } /* 3위 초록색 */
+{% endblock %}
+
+{% block content %}
+  <h1 style="text-align: center;">베스트 셀러 목록</h1>
+  {% for item in result %}
+    <div class="book-card {% if item.rank <= 3 %}rank-{{ item.rank }}{% endif %}">
+      <h3>{{ item.title }}</h3>
+      <p style="color: #605e61">저자: {{ item.author }}</p>
+      <p style="font-size: 0.85rem;">설명: {{ item.bestDuration }}</p>
+      <hr>
+    </div>
+  {% endfor %}
+{% endblock %}

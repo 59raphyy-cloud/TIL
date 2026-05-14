@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+    {% block title %}{% endblock %}
+  </title>
+	<style>
+    .nav-bar { background: #f8f9fa; padding: 10px; display: flex; gap: 10px; }
+    .nav-item { padding: 10px 20px; text-decoration: none; color: black; }
+    .nav-home { background: #4caf50; color: white; }
+    {% block style %}{% endblock %}
+  </style>
+</head>
+<body>
+	<!-- index, recommend, bestseller 로 이동 가능한 네비게이션 바 -->
+  <nav class="nav-bar">
+		<!-- 경로는 DTL의 url 태그를 사용하여 작성 -->
+    <a href="{% url 'index' %}" class="nav-item nav-home">Home</a>
+    <a href="{% url 'libraries:recommend' %}" class="nav-item">Recommend</a>
+    <a href="{% url 'libraries:bestseller' %}" class="nav-item">BestSeller</a>
+  </nav>
+  {% block content %}{% endblock %}
+</body>
+</html>

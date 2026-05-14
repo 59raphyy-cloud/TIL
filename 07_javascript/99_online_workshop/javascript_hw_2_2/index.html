@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 변수 선언 방식 변경
+    let name = '홍길동'
+    const age = 30
+    name = '김철수'
+
+    console.log(name)
+
+    // 비교 연산자와 일치 연산자 수정
+    // if 문이 정상 작동 할 수 있도록 수정
+    if (name === '김철수' && age === 30) {
+      // string interpolation을 활용하여 출력되도록 수정
+      console.log(`${name}의 나이는 ${age}살 입니다.`)
+			// new_age 변수 선언과 값 할당 방식 유지
+      let new_age = age 
+      new_age += 1
+      // console.log 호출 위치를 if 문 안으로 이동
+      console.log(`1년이 지나 이제 ${name}는/은 ${new_age}살이 되었습니다.`)
+    }
+  </script>
+</body>
+</html>
